@@ -5,7 +5,7 @@ SOURCES=GPIOtestWithThreadDriver.cpp GPIOClass.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=GPIOtestWithThreadDriver
 
-all: $(SLURCES) $(EXECUTABLE)
+all: $(SOURCES) $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $@ $(LDFLAGS)
